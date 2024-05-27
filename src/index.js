@@ -7,18 +7,20 @@ import { ExpenseTrackerProvider } from "./components/context/ExpenseTrackerConte
 import { SnackbarProvider } from "notistack";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <SnackbarProvider
-    maxSnack={1}
-    anchorOrigin={{
-      vertical: "bottom",
-      horizontal: "left",
-    }}
-    preventDuplicate
-  >
-    <ExpenseTrackerProvider>
-      <App />
-    </ExpenseTrackerProvider>
-  </SnackbarProvider>
+  <React.StrictMode>
+    <SnackbarProvider
+      maxSnack={1}
+      anchorOrigin={{
+        vertical: "bottom",
+        horizontal: "left",
+      }}
+      preventDuplicate
+    >
+      <ExpenseTrackerProvider>
+        <App />
+      </ExpenseTrackerProvider>
+    </SnackbarProvider>
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
