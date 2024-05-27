@@ -1,0 +1,63 @@
+.balance {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 181px;
+  width: 100%;
+  max-width: 400px;
+  background-color: #9b9b9b;
+  border-radius: 15px;
+  margin-bottom: 10px; 
+}
+
+.balance-title {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 34.47px;
+  color: #ffffff;
+}
+
+.balance-money {
+  font-weight: 700;
+  font-size: 30px;
+  color: #9dff5b;
+}
+
+.balance-button {
+  height: 38px;
+  width: 100%;
+  max-width: 167px;
+  background: linear-gradient(90deg, #b5dc52 0%, #89e148 100%);
+  border-radius: 15px;
+  border: 0px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .balance {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .balance-button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .balance-title {
+    font-size: 24px;
+  }
+
+  .balance-money {
+    font-size: 24px;
+  }
+
+  .balance-button {
+    font-size: 14px;
+  }
+}

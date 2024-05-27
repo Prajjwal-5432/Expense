@@ -1,0 +1,63 @@
+.expense-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 181px;
+  width: 100%;
+  max-width: 400px;
+  background-color: #9b9b9b;
+  border-radius: 15px;
+  margin-bottom: 10px; 
+}
+
+.expense-form-title {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 34.47px;
+  color: #ffffff;
+}
+
+.expense-form-money {
+  font-weight: 700;
+  font-size: 30px;
+  color: #f4bb4a;
+}
+
+.expense-form-button {
+  height: 38px;
+  width: 100%;
+  max-width: 167px;
+  background: linear-gradient(90deg, #ff9595 0%, #ff4747 80%, #ff3838 100%);
+  border-radius: 15px;
+  border: 0px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .expense-form {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .expense-form-button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .expense-form-title {
+    font-size: 24px;
+  }
+
+  .expense-form-money {
+    font-size: 24px;
+  }
+
+  .expense-form-button {
+    font-size: 14px;
+  }
+}

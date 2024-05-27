@@ -1,0 +1,76 @@
+.topexpense {
+  height: auto;
+  width: 550px;
+}
+
+.topexpense-title {
+  font-weight: 700;
+  font-style: italic;
+  font-size: 28px;
+  line-height: 32.17px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.topexpense-content {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  height: auto;
+  max-width: 938px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.expense-category {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.expense-category p {
+  flex: 0 0 150px;
+  margin: 0;
+  color: #000000;
+  text-align: right;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16.34px;
+}
+
+.progress-bar-container {
+  flex: 1;
+  border-radius: 0 10px 10px 0;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 20px;
+  background-color: #8784d2;
+  border-radius: 0 10px 10px 0;
+  transition: width 0.3s ease;
+  box-shadow: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .topexpense {
+    width: 100%;
+  }
+
+  .expense-category {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .expense-category p {
+    flex: none;
+    width: auto;
+  }
+
+  .progress-bar-container {
+    width: 100%;
+  }
+}

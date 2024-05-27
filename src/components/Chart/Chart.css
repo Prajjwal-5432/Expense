@@ -1,0 +1,16 @@
+.chart {
+  height: auto;
+  width: 100%;
+  max-width: 356px;
+  border: 1px solid green;
+  background-color: #9b9b9b;
+  border-radius: 15px;
+  margin-bottom: 10px; 
+}
+
+@media (max-width: 768px) {
+  .chart {
+    width: 100%;
+    max-width: 100%;
+  }
+}

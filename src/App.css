@@ -1,0 +1,38 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.app-title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 36.77px;
+  color: #ffffff;
+}
+
+.forms {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+  flex-wrap: wrap;
+  height: auto;
+  background-color: #626262;
+  border-radius: 10px;
+  padding: 12px; 
+}
+
+.app-expense {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+@media (max-width: 750px) {
+  .forms {
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: auto;
+  }
+}
